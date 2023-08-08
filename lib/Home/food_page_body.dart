@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:e_commerce/util/color.dart';
+import 'package:e_commerce/util/dimensions.dart';
 import 'package:e_commerce/widgets/big_text.dart';
 import 'package:e_commerce/widgets/icon_and_text.dart';
 import 'package:e_commerce/widgets/small_text.dart';
@@ -17,7 +18,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   PageController pageController = PageController(viewportFraction: 0.85);
   var currPageValue=0.0;
   double scaleFactor = 0.8;
-  double height = 220;
+  double height = Dimensions.pageViewController;
 
   @override
   void initState(){
@@ -101,7 +102,7 @@ setState(() {
       child: Stack(
         children: [
           Container(
-            height: 220,
+            height: Dimensions.pageViewController,
             margin: EdgeInsets.only(left: 10, right: 10),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
@@ -113,7 +114,7 @@ setState(() {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              height: 120,
+              height: Dimensions.pageViewTextController,
               margin: EdgeInsets.only(left: 30, bottom: 30, right: 30),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
