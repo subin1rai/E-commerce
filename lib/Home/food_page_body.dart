@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:e_commerce/util/color.dart';
 import 'package:e_commerce/widgets/big_text.dart';
 import 'package:e_commerce/widgets/icon_and_text.dart';
@@ -37,7 +38,9 @@ setState(() {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Column(
+      children: [
+        Container(
       //color: Colors.deepPurple,
       height: 320,
       child: PageView.builder(
@@ -46,6 +49,18 @@ setState(() {
           itemBuilder: (context, position) {
             return _buildPageItem(position);
           }),
+    ),
+    new DotsIndicator(
+  dotsCount: 5,
+  position: currPageValue,
+  decorator: DotsDecorator(
+    activeColor: FoodColor.mainColor,
+    size: const Size.square(9.0),
+    activeSize: const Size(18.0, 9.0),
+    activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+  ),
+)
+      ],
     );
   }
 
