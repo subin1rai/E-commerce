@@ -43,7 +43,7 @@ setState(() {
       children: [
         Container(
       //color: Colors.deepPurple,
-      height: 320,
+      height: Dimensions.pageView,
       child: PageView.builder(
           controller: pageController,
           itemCount: 5,
@@ -105,7 +105,7 @@ setState(() {
             height: Dimensions.pageViewController,
             margin: EdgeInsets.only(left: 10, right: 10),
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
+                borderRadius: BorderRadius.circular(Dimensions.radius30),
                 color: index.isEven ? FoodColor.paraColor : Color(0xFF9294cc),
                 image: DecorationImage(
                     fit: BoxFit.cover, image: AssetImage("assets/burger.jpg"))),
@@ -117,7 +117,8 @@ setState(() {
               height: Dimensions.pageViewTextController,
               margin: EdgeInsets.only(left: 30, bottom: 30, right: 30),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(Dimensions.radius20
+                ),
                 boxShadow: [
                   BoxShadow(
                     color: Color(0xFFe8e8e8),
@@ -134,7 +135,7 @@ setState(() {
                 color: Colors.white,
               ),
               child: Container(
-                padding: EdgeInsets.only(top: 15, right: 15, left: 15),
+                padding: EdgeInsets.only(top: Dimensions.height15, right: 15, left: 15),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -143,7 +144,7 @@ setState(() {
                       color: Colors.black,
                     ),
                     SizedBox(
-                      height: 10,
+                      height: Dimensions.height10,
                     ),
                     Row(
                       children: [
@@ -171,7 +172,7 @@ setState(() {
                       ],
                     ),
                     SizedBox(
-                      height: 20,
+                      height: Dimensions.height20,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
