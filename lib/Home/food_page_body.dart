@@ -103,7 +103,7 @@ setState(() {
         children: [
           Container(
             height: Dimensions.pageViewController,
-            margin: EdgeInsets.only(left: 10, right: 10),
+            margin: EdgeInsets.only(left: Dimensions.width10, right: Dimensions.width10),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(Dimensions.radius30),
                 color: index.isEven ? FoodColor.paraColor : Color(0xFF9294cc),
