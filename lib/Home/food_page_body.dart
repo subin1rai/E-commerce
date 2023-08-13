@@ -115,7 +115,7 @@ setState(() {
             alignment: Alignment.bottomCenter,
             child: Container(
               height: Dimensions.pageViewTextController,
-              margin: EdgeInsets.only(left: 30, bottom: 30, right: 30),
+              margin: EdgeInsets.only(left: Dimensions.radius30, bottom: Dimensions.radius30, right: Dimensions.radius30),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(Dimensions.radius20
                 ),

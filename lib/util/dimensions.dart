@@ -24,8 +24,14 @@ static double width20 = screenHight/82.2;
 
 
 static double font20 = screenHight/42.2;
+static double radius15 = screenHight/56.27;
 static double radius20 = screenHight/42.2;
 static double radius30 = screenHight/28.13;
+static double radius45 = screenHight/18.76;
+
+//icon size
+static double size24 = screenHight/35.17;
+
 
 
 }
