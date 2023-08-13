@@ -21,7 +21,8 @@ class _MainFoodPageState extends State<MainFoodPage> {
         //app Bar
         Container(
           child: Container(
-            margin: EdgeInsets.only(top: Dimensions.radius45, bottom: Dimensions.radius15),
+            margin: EdgeInsets.only(
+                top: Dimensions.radius45, bottom: Dimensions.radius15),
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -50,7 +51,8 @@ class _MainFoodPageState extends State<MainFoodPage> {
                     width: Dimensions.radius45,
                     height: Dimensions.radius45,
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(Dimensions.radius15),
+                        borderRadius:
+                            BorderRadius.circular(Dimensions.radius15),
                         color: FoodColor.mainColor),
                     child: Icon(
                       Icons.search,
@@ -63,7 +65,10 @@ class _MainFoodPageState extends State<MainFoodPage> {
             ),
           ),
         ),
-      FoodPageBody()
+        Expanded(
+            child: SingleChildScrollView(
+          child: FoodPageBody(),
+        ))
       ],
     ));
   }
