@@ -96,10 +96,10 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           ),
         ),
         //list of food and image
-        Container(
-          height: 900,
-          child: ListView.builder(
+      
+         ListView.builder(
               physics: NeverScrollableScrollPhysics(),
+              shrinkWrap: true,
               itemCount: 10,
               itemBuilder: (context, index) {
                 return Container(
@@ -186,7 +186,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   ),
                 );
               }),
-        )
+        
       ],
     );
   }
